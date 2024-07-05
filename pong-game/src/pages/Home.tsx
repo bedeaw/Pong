@@ -15,28 +15,15 @@ const Home = () => {
 
           <Link to="/play" className='play'>
             Play
-          </Link>  
+          </Link> 
+
+          <Link to="/controls" className='link'>
+            Controls
+          </Link>
 
           <Link to="/about" className='link'>
             About
           </Link>
-
-          {/* <a
-            className="App-link"
-            href="https://github.com/bedeaw/Pong_Client"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Client Repo
-          </a>
-          <a
-            className="App-link"
-            href="https://github.com/bedeaw/Pong_Server"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Server Repo
-          </a> */}
         </header>
       </div>
     );

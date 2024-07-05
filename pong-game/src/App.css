@@ -4,6 +4,16 @@ body{
   overflow-x: hidden;
 }
 
+#Play-Page {
+  height: 100vh; 
+  width: 100vw; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 0;
+  overflow-x: hidden; 
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -26,6 +36,21 @@ body{
 
 .App-link {
   color: #61dafb;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-text {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.App-link:hover {
+  color: red;
 }
 
 @keyframes App-logo-spin {
@@ -39,6 +64,14 @@ body{
 
 .Pong-Logo {
   align-items: center;
+}
+
+.Home-Logo {
+  color: white;
+  top: 7%;
+  left: 5%;
+  position: absolute;
+  font-size: calc(20px + 2vmin);
 }
 
 .main{
@@ -84,3 +117,130 @@ body{
 .play:hover {
   color: red;
 }
+
+.home {
+  color: #fff; 
+  text-decoration: none; 
+  padding: 10px; 
+  font-size: 1.4rem;
+}
+
+.home:hover {
+  color: red;
+}
+
+.Co-Op {
+  color: #fff; 
+  text-decoration: none; 
+  padding: 10px; 
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+.Co-Op-body {
+  padding: 5px; 
+  margin-top: 1%;
+  margin-left: 5%;
+  font-size: 1.2rem;
+}
+
+.Co-Op-instructions {
+  margin-left: 10%
+}
+  
+.board { 
+    height: 85vh; 
+    width: 80vw; 
+    background-image: linear-gradient( 
+            to right, #5c6e91, #839b97); 
+    border-radius: 14px;
+} 
+  
+.ball { 
+    height: 30px; 
+    width: 30px; 
+    border-radius: 50%; 
+    position: fixed; 
+    top: calc(50% - 15px); 
+    left: calc(50% - 15px); 
+} 
+  
+.ball_effect { 
+    height: 100%; 
+    width: 100%; 
+    border-radius: 100px; 
+    animation: spinBall 0.1s linear infinite; 
+    box-shadow: inset 0 0 18px #fff, 
+        inset 6px 0 18px violet, 
+        inset -6px 0 18px #0ff, 
+        inset 6px 0 30px violet, 
+        inset -6px 0 30px #0ff, 
+        0 0 18px #fff, -4px 0 18px
+        violet, 4px 0 18px #0ff; 
+} 
+  
+@keyframes spinBall { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform: rotate(360deg); 
+    } 
+} 
+  
+.paddle { 
+    height: 100px; 
+    width: 18px; 
+    border-radius: 50%; 
+    position: fixed; 
+} 
+  
+.paddle_1 { 
+    top: calc(7.5vh + 55px); 
+    left: calc(10vw + 30px); 
+    box-shadow: inset 0 0 18px #fff, 
+        inset -6px 0 18px #f3bad6, 
+        inset 6px 0 18px #0ff, 
+        inset -6px 0 30px #f3bad6, 
+        inset 6px 0 30px #0ff, 
+        0 0 18px #fff, 4px 0 18px
+        #f3bad6, -4px 0 18px #0ff; 
+} 
+  
+.paddle_2 { 
+    top: calc(85vh + 7.5vh - 100px - 55px); 
+    right: calc(10vw + 30px); 
+    box-shadow: inset 0 0 18px #fff, 
+        inset 6px 0 18px #f3bad6, 
+        inset -6px 0 18px #0ff, 
+        inset 6px 0 30px #f3bad6, 
+        inset -6px 0 30px #0ff, 
+        0 0 18px #fff, -4px 0 18px
+        #f3bad6, 4px 0 18px #0ff; 
+} 
+  
+.player_1_score { 
+    height: 50px; 
+    width: 50px; 
+    color: chartreuse; 
+    position: fixed; 
+    left: 30vw; 
+    margin-top: 30px; 
+} 
+  
+.player_2_score { 
+    height: 50px; 
+    width: 50px; 
+    color: chartreuse; 
+    position: fixed; 
+    left: 70vw; 
+    margin-top: 30px; 
+} 
+  
+.message { 
+    position: fixed; 
+    color: #48426d;
+    height: 10vh; 
+    width: 30vw; 
+    color: #c9cbff; 
+    left: 38vw; 
+    margin: 30px auto auto auto; 
+} 
